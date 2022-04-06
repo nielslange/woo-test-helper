@@ -27,7 +27,7 @@ function woocommerce_setup_terms_and_privacy_page() {
 	if ( isset( $_GET['setup_terms_and_privacy'] ) ) {
 		publish_privacy_page();
 		publish_terms_page();
-		exit( 'Terms and Privacy pages set up.' );
+		exit( 'Terms & Privacy pages set up.' );
 	}
 }
 add_action( 'init', 'woocommerce_setup_terms_and_privacy_page' );
@@ -40,7 +40,7 @@ function woocommerce_teardown_terms_and_privacy_page() {
 	if ( isset( $_GET['teardown_terms_and_privacy'] ) ) {
 		unpublish_privacy_page();
 		delete_terms_page();
-		exit( 'Terms and Privacy pages teared down.' );
+		exit( 'Terms & Privacy pages teared down.' );
 	}
 }
 add_action( 'init', 'woocommerce_teardown_terms_and_privacy_page' );
