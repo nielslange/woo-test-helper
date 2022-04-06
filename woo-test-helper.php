@@ -6,7 +6,7 @@
  * Version: 0.0.1
  * Author: Automattic
  * Author URI: https://automattic.com
- * Text Domain:  woo-test-helper
+ * Text Domain: woo-test-helper
  * Requires at least: 5.9
  * Requires PHP: 7.3
  * WC requires at least: 6.0
@@ -99,9 +99,7 @@ function delete_terms_page() {
 	global $wpdb;
 
 	$table = $wpdb->prefix . 'posts';
-	$data  = array(
-		'post_title' => 'Terms & Conditions',
-	);
+	$data  = array( 'post_title' => 'Terms & Conditions' );
 	$wpdb->delete( $table, $data );
 }
 
